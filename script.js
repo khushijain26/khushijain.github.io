@@ -6,7 +6,8 @@ function toggleMenu() {
 }
    var cursor = document.querySelector(".cursor");
     var cursor2 = document.querySelector(".cursor2");
-    document.addEventListener("mousemove",function(e){
+    const throttledMouseMove = throttle(onMouseMove,delay:30);
+    document.addEventListener("mousemove",throttledMouseMove,function(e){
       cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
     });
 
