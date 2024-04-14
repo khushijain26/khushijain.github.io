@@ -22,7 +22,7 @@ body {
   top: 0;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: .1s;
+  transition: 400ms margin-left ease-out, 400ms margin-top ease-out;
   z-index: 1;
   scroll-behavior: smooth;
 }
@@ -37,7 +37,7 @@ body {
   top: 0;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: .15s;
+  transition: 400ms margin-left ease-out, 400ms margin-top ease-out;
   z-index: 1;
   scroll-behavior: smooth;
 
