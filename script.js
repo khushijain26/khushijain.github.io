@@ -5,17 +5,12 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-window.addEventListener("mousemove", function (e) {
-  const posX = e.clientX;
-  const posY = e.clientY;
-
-  cursor.style.left = `${posX}px`;
-  cursor2.style.top = `${posY}px`;
-
-  // cursorOutline.style.left = `${posX}px`;
-  // cursorOutline.style.top = `${posY}px`;
-
-  cursorOutline.animate({
+var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+cursorOutline.animate({
     left: `${posX}px`,
     top: `${posY}px`
   }, {duration: 500, fill: "forwards"} )
