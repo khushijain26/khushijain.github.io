@@ -24,6 +24,7 @@ body {
   transform: translate(-50%, -50%);
   transition: .1s;
   z-index: 1;
+  scroll-behavior: smooth;
 }
 
 .cursor2{
@@ -38,6 +39,8 @@ body {
   transform: translate(-50%, -50%);
   transition: .15s;
   z-index: 1;
+  scroll-behavior: smooth;
+
 }
 
 html {
