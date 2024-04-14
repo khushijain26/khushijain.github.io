@@ -9,8 +9,8 @@ window.addEventListener("mousemove", function (e) {
   const posX = e.clientX;
   const posY = e.clientY;
 
-  cursorDot.style.left = `${posX}px`;
-  cursorDot.style.top = `${posY}px`;
+  cursor.style.left = `${posX}px`;
+  cursor2.style.top = `${posY}px`;
 
   // cursorOutline.style.left = `${posX}px`;
   // cursorOutline.style.top = `${posY}px`;
