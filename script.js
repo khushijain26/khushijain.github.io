@@ -10,8 +10,3 @@ var cursor = document.querySelector(".cursor");
     document.addEventListener("mousemove",function(e){
       cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
     });
-cursorOutline.animate({
-    left: `${posX}px`,
-    top: `${posY}px`
-  }, {duration: 500, fill: "forwards"} )
-});
